@@ -1,0 +1,175 @@
+\documentclass[ngerman,addpoints,10pt]{exam}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper]{geometry}
+\geometry{verbose,tmargin=2.5cm,bmargin=2.5cm,lmargin=2.5cm,rmargin=2.5cm}
+\pagestyle{headings}
+\setcounter{secnumdepth}{2}
+\setcounter{tocdepth}{2}
+\usepackage{babel}	
+\usepackage{amssymb}
+\usepackage{color}
+
+\pagestyle{headandfoot}
+\firstpageheader{
+\large\bfseries \Large Einführung in die Informatik II - 
+Keine Klausur, 8. Mai 2014}{}{}
+
+
+\firstpagefooter{Dozent: Axel Dürkop}{}{Bitte wenden!}
+\runningheader{\large\bfseries Einführung in die Informatik II -
+Keine Klausur, 8. Mai 2014}{}{}
+\runningfooter{Dozent: Axel Dürkop}{}{Seite \thepage} 
+
+\pointsdroppedatright
+\extrawidth{-1cm}
+
+%\printanswers
+%\CorrectChoiceEmphasis{\color{green}\bfseries}
+
+\renewcommand{\solutiontitle}{\noindent\textbf{Lösung:}\par\noindent}
+
+
+
+
+\begin{document}
+
+	\fullwidth{\noindent \Large Thema: Client-/Server-Kommunikation, HTML und CSS}
+		
+\begin{flushleft}
+		Anzahl der Fragen: \textbf{\numquestions}\\
+		Anzahl der erreichbaren Punkte: \textbf{\numpoints}\\
+		Dauer der Prüfung: \textbf{30 Minuten}
+\end{flushleft}
+
+
+		
+	\begin{questions}	
+	
+		\fullwidth{\Large \textbf{Fragen zu HTML und CSS}}
+
+		\question[10]
+		\textbf{Wofür steht die Abkürzung HTML?}
+		\droppoints
+		
+		\begin{checkboxes}
+			\choice Hypertext Makeup Language
+			\choice Helpertext Markup Language
+			\choice Hyperterminal Markup Language
+			\choice Hypertags Markup Language
+			\CorrectChoice Hypertext Markup Language
+		\end{checkboxes}
+		\bigskip
+
+		% --------------------------------------------------
+
+		\question[10]
+		\textbf{Welche Attribute sind erforderlich für die W3C-gemäße Verwendung des \texttt{<img/>}-Elements (Mehrfachantwort)?}
+		\droppoints
+		
+		\checkboxchar{$\Box$}
+		\checkedchar{$\blacksquare$}
+
+		\begin{checkboxes}
+			\CorrectChoice src
+			\choice href
+			\CorrectChoice alt
+			\choice rel
+			\choice title
+		\end{checkboxes}
+		\bigskip
+		
+		% --------------------------------------------------
+						
+		\question[10]
+		\textbf{Erläutern Sie mit wenigen Worten den Unterschied zwischen HTML und CSS!}
+		\droppoints
+		\begin{solutionorbox}[4cm]
+			HTML dient dazu, Informationen eines Webdokuments gemäß ihrer Bedeutung auszuzeichnen.
+			CSS wird verwendet, um die Informationen der Seite zu formatieren.
+		\end{solutionorbox}
+		\bigskip
+		
+		% --------------------------------------------------
+						
+		\question[10]
+		\textbf{Erläutern Sie den Unterschied zwischen Klassen und IDs im Bezug auf CSS!}
+		\droppoints
+		\begin{solutionorbox}[4cm]
+			IDs werden verwendet, um ein HTML-Element im Dokument eindeutig auszuzeichnen.
+			Die mehrmalige Verwendung der ID im selben Dokument ist nicht erlaubt. 
+			CSS-Klassen werden im Sinne von Stilvorlagen verwendet und können mehrfach für
+			Elemente vergeben werden, um diesen allen das gleiche Aussehen zu geben. Eine
+			Änderung in der Klasse wirkt sich folglich auf alle Instanzen aus.
+		\end{solutionorbox}
+		\bigskip
+		
+		% --------------------------------------------------	
+		\newpage
+
+		\fullwidth{\Large \textbf{Fragen zu Client und Webserver}}			
+				
+		\question[10]
+		\textbf{Aus welcher Folge von Ereignissen bestehen Aufruf und Auslieferung der Webseite \textit{www.heise.de}?}
+		\droppoints
+		\begin{solutionorbox}[6cm]
+			\begin{enumerate}
+			\item Eingabe der URL im Browser
+			\item Abfrage der IP-Adresse des Zielservers beim Domain Name Service (DNS)
+			\item Anfrage (Request) des gewünschten Dokuments beim Zielservers unter der erhaltenen IP
+			\item Antwort des Webservers und Auslieferung des gewünschten Dokuments sofern vorhanden
+			\item Anzeige des Dokuments im Browser
+			\end{enumerate}
+		\end{solutionorbox}
+		\bigskip
+		
+		% --------------------------------------------------
+		
+		\question[10]
+		\textbf{Erklären Sie das Konzept des Wurzelverzeichnis eines Webservers!}
+		\droppoints
+		\begin{solutionorbox}[6cm]
+			Das Wurzelverzeichnis ist der Startpunkt der Verzeichnisstruktur eines Webservers. 
+			Unterhalb des Wurzelverzeichnisses liegen die Dokumente, die der Webserver ausliefern kann. 
+			Der Dokumentenpfad wird beim Request an die URL angehängt, wobei der \texttt{/} hinter der IP 
+			oder Domain dem Wurzelverzeichnis entspricht.\\
+			Das Wurzelverzeichnis des Serverbetriebssystems ist nicht zu verwechseln mit dem \\
+			Wurzelverzeichnis
+			des Webservers!
+		\end{solutionorbox}
+		\bigskip
+
+	\end{questions}
+
+	\hqword{Frage}
+	\hpword{Punktzahl}
+	\hsword{Davon erreicht}
+	\htword{\textbf{Summe}}
+
+
+	\fullwidth{\Large \textbf{Bewertung}}			
+	\fullwidth{\gradetable[h]}
+
+	\bigskip
+	\bigskip
+
+	\fullwidth{
+		\fbox{\parbox{14cm}{
+		
+		\begin{flushleft}
+		\noindent\textbf{\Large Hinweis}\par\noindent Diese Klausur ist keine Klausur, auch wenn Sie jetzt den Eindruck haben.
+		Sie beantworten die Fragen jetzt oder außerhalb der Veranstaltung und
+		prüfen eigenverantwortlich Ihren Kenntnisstand. Anschließend behalten Sie das Arbeitsblatt und
+		verbergen Ihre Antworten vor Ihrem Dozenten.\\
+
+		\end{flushleft}
+		}}
+	
+	
+	}
+	
+
+	
+
+
+\end{document}

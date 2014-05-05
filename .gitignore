@@ -1,0 +1,8 @@
+*.aux
+*.dvi
+*.log
+*.pdf
+*.ps
+*.synctex.gz
+*.tex.bak
+missfont.log
